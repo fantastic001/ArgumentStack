@@ -1,9 +1,10 @@
 
 class ArgumentStack(object):
     
-    def __init__(self):
+    def __init__(self, error_msg=""):
         self.stack = []
         self.types = [] 
+        self.error_msg = error_msg
 
         # in types:
         # 0 - command 
@@ -64,3 +65,5 @@ class ArgumentStack(object):
                         params[l[i][1:]] = args[i+1]
                 if found:
                     action[1](**params)
+                    return
+        print(self.error_msg)

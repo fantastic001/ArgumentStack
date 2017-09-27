@@ -3,7 +3,7 @@ from src import *
 
 
 import sys
-stack = ArgumentStack()
+stack = ArgumentStack("Wrong command")
 
 stack.pushCommand("hello")
 stack.pushCommand("world")
