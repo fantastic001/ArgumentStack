@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'ArgumentStack',
   packages = ['ArgumentStack'], # this must be the same as the name above
-  version = '0.1',
+  version = '0.2',
   description = 'An easy way to create command-line application with nicely organized arguments.',
   author = 'Stefan Nožinić',
   author_email = 'stefan@lugons.org',
